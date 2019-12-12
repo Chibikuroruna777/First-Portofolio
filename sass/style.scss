@@ -41,9 +41,16 @@ header{
     }
 }
 
-.box-lang>a:visited{
+.box-lang>a{
+  &:link{
+  color: beige;
+  &:visited{
   color: beige;
 }
+  }
+}
+
+
 
 .first-title{
   margin-top: 10%;
