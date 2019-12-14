@@ -45,5 +45,10 @@ $(function(){
         $('.typ').children('span:eq('+i+')').delay(50*i).animate({'opacity':1},50);
         };
         });
+
+        // 波の設定
+        $('.container').ripples({
+            resolution: 1000
+        });
 });
 
