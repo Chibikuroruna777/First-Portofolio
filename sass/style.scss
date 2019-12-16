@@ -210,18 +210,18 @@ header{
   }
   
   .bar{
-    background-color: rgba(215, 209, 209, 0.933);
+    background-color: grey;
     padding: 2px;
     border-radius: 15px;
     margin-bottom: 5px;
-    font-size: 14px;
-    color: whitesmoke;
+    font-size: 16px;
+    color: beige;
     font-weight: bold;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
   }
   .bar::before{
     content:  attr(data-skill);
-    background-color: blue;
+    background-color: darkgrey;
     display: inline-block;
     padding: 5px 0 5px 10px;
     border-radius: inherit;
@@ -232,10 +232,10 @@ header{
   }
   
   .bar.front::before{
-    background-color: blue;
+    background-color: darkgrey;
   }
   .bar.back::before{
-    background-color: blue;
+    background-color: darkgrey;
   }
   
   .bar.HTML5::before{
@@ -254,6 +254,10 @@ header{
     width: calc(60% - 10px);
   }
   .bar.PHP::before{
+    width: calc(50% - 10px);
+  }
+
+  .bar.WordPress::before{
     width: calc(50% - 10px);
   }
 
@@ -498,6 +502,7 @@ header{
   position: fixed;
   top: 50%;
   left: 2%;
+  cursor: pointer;
 >a{
   font-size: 40px;
   margin-bottom: 20px;
