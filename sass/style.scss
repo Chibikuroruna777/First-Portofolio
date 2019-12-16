@@ -101,6 +101,7 @@ header{
   color: beige;
   display: flex;
   >.category{
+    font-family: sans-serif;
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
@@ -113,6 +114,7 @@ header{
   >.details{
     display: flex;
     flex-direction: column;
+    font-family: sans-serif;
   >p{
     margin-bottom: 20px;
     line-height: 40px;
@@ -401,6 +403,7 @@ header{
 
 .lang{
   display: flex;
+  font-family: sans-serif;
   >p{
     font-size: 20px;
     margin-bottom: 15px;
@@ -452,6 +455,7 @@ header{
   margin-top: 30px;
   line-height: 20px;
 >.english, .french{
+  font-family: sans-serif;
   display: flex;
   flex-direction: column;
   background-color: rgba(254, 254, 254, 0.5);
@@ -474,6 +478,7 @@ header{
     text-align: center;
     padding-bottom: 20px;
     >h3{
+      font-family: cursive;
       font-size: 26px;
       color: #FF8C00;
   background: -webkit-linear-gradient(0deg, #40E0D0, #FF8C00, #FF0080);
