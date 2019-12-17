@@ -12,7 +12,7 @@ body{
 
 @mixin subtitle{
   display: flex;
-  font-size: 60px;
+  font-size: 400%;
   font-weight: bold;
   color: beige;
 }
@@ -43,6 +43,7 @@ header{
     >.box-lang{
       @include box;
       margin-right: 7%;
+      font-size: 120%;
       color: beige;
     }
 }
@@ -58,7 +59,7 @@ header{
 
 .first-title{
   margin-top: 10%;
-  font-size: 120px;
+  font-size: 700%;
   color: beige;
   display: flex;
   flex-direction: column;
@@ -95,32 +96,31 @@ header{
     margin-right: 0px;
     }
 >#self-intr{
-  margin: 50px 200px 0 220px;
+  margin: 7% 10% 0 10%;
+  width: 80%;
   display: flex;
-  font-size: 26px;
+  font-size: 150%;
   color: beige;
   display: flex;
-  >.category{
+  flex-direction: column;
+  >.age, .hobby, .background{
     font-family: sans-serif;
     display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-    width: 15%;
-  >p{
-    margin-bottom: 20px;
-    line-height: 40px;
-  }
-  }
-  >.details{
-    display: flex;
-    flex-direction: column;
-    font-family: sans-serif;
+    margin-bottom: 5%;
   >p{
     margin-bottom: 20px;
     line-height: 40px;
   }
   }
 }
+}
+
+.age>p:first-child, .hobby>p:first-child, .background>p:first-child{
+  width: 20%;
+}
+
+.age>p:nth-child(2n), .hobby>p:nth-child(2n), .background>p:nth-child(2n){
+  width: 80%;
 }
 
 #section {
@@ -153,7 +153,7 @@ header{
       @include box;
       margin-bottom: 70px;
       color: beige;
-      font-size: 30px;
+      font-size: 100%;
       font-weight: bold;
       >h3{
         margin-bottom: 30px;
@@ -180,8 +180,8 @@ header{
       @include box;
       display: flex;
       flex-direction: column;
-      font-size: 20px;
-      margin: 50px 220px 0 0;
+      font-size: 120%;
+      margin: 10% 10% 0 0;
       color: beige;
       >p{
         margin-bottom: 2%;
@@ -216,7 +216,7 @@ header{
     padding: 2px;
     border-radius: 15px;
     margin-bottom: 5px;
-    font-size: 16px;
+    font-size: 100%;
     color: beige;
     font-weight: bold;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
@@ -276,8 +276,8 @@ header{
     border-radius: 25px;
     cursor: pointer;
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     position: fixed;
     top: 50%;
     right: 2%;
@@ -311,7 +311,7 @@ header{
   .l-drawer__item-inner{
     cursor: pointer;
     color: beige;
-    font-size: 20px;
+    font-size: 120%;
   }
   
   // ドロワーメニュー開いた時のメインエリアを暗く
@@ -332,7 +332,7 @@ header{
     color: #000;
     max-width: 100%;
     width: 250px;
-    height: 500px;
+    height: 800px;
     overflow-y: auto; //スクロール
     -webkit-overflow-scrolling: touch; //スクロール（SP）
     position: fixed;
@@ -405,7 +405,7 @@ header{
   display: flex;
   font-family: sans-serif;
   >p{
-    font-size: 20px;
+    font-size: 100%;
     margin-bottom: 15px;
     margin-left: 10px;
   }
@@ -431,19 +431,19 @@ header{
   position: fixed;
   bottom: 30px;
   right: 30px;
-  font-size: 60px;
+  font-size: 100%;
   color: beige;
   cursor: pointer;
   align-items: center;
   >p{
-    font-size: 16px;
+    font-size: 100%;
   }
 }
 
 .lang-title{
   margin-top: 30px;
   >h3{
-    font-size: 30px;
+    font-size: 100%;
     color: beige;
     font-weight: bold;
   }
@@ -460,26 +460,26 @@ header{
   flex-direction: column;
   background-color: rgba(254, 254, 254, 0.5);
   line-height: 25px;
-  height: 200px;
+  height: auto;
   width: 40%;
   border-radius: 50px;
   padding: 20px;
 > .english-details, .french-details{
   display: flex;
   flex-direction: column;
-  font-size: 16px;
+  font-size: 100%;
   height: 100%;
 }
 >.english-title, .french-title{
   display: flex;
   justify-content: center;
-  font-size: 30px;
+  font-size: 150%;
     font-weight: bold;
     text-align: center;
     padding-bottom: 20px;
     >h3{
       font-family: cursive;
-      font-size: 26px;
+      font-size: 100%;
       color: #FF8C00;
   background: -webkit-linear-gradient(0deg, #40E0D0, #FF8C00, #FF0080);
     -webkit-background-clip: text;
@@ -509,7 +509,7 @@ header{
   left: 2%;
   cursor: pointer;
 >a{
-  font-size: 40px;
+  font-size: 200%;
   margin-bottom: 20px;
   margin-left: 10px;
 }
@@ -574,3 +574,228 @@ header{
 }
 
 @import "reset.css";
+
+@media screen and (max-width: 800px){
+  .first-title{
+    margin-top: 30%;
+    font-size: 400%;
+    line-height: 100px;
+}
+
+#block-01{
+  >.sub-title{
+    font-size: 200%;
+  }
+>#self-intr{
+  font-size: 100%;
+  >.age, .hobby, .background{
+    margin-bottom: 0%;
+  }
+}
+}
+
+.skillBar-container{
+  >.sub-title h1{
+    font-size: 200%;
+  }
+}
+
+.lang-skill{
+  flex-direction: column;
+  align-items: center;
+  >.english, .french{
+  line-height: 20px;
+  height: auto;
+  width: 50%;
+  margin-bottom: 10%;
+}
+}
+
+.work-content{
+>.work-inner{
+  width: 45%;
+  margin-bottom: 20px;
+}
+}
+
+#block-03{
+>.works{
+  >.sub-title h1{
+    font-size: 200%;
+  }
+  >.work-details{
+    margin: 10% 15% 0 0;
+}
+}
+}
+}
+
+@media screen and (max-width: 650px){
+  #block-01{
+    padding-top: 5%;
+    >#self-intr{
+      font-size: 20px;
+      margin: 0;
+      margin-left: 10%;
+      font-size: 90%;
+      margin-top: 5%;
+      >.age, .hobby, .background{
+        >p{
+          line-height: 20px;
+    }
+  }
+  }
+}
+
+#block-02 {
+  padding-top: 5%;
+  >.skillBar-container{
+>.sub-title h1{
+  margin-bottom: 5%;
+}
+}
+}
+
+#block-03{
+  >.works{
+    >.sub-title h1{
+      margin-top: 5%;
+    }
+  }
+   
+  .works>.work-details{
+      margin-top: 0;
+  }
+  }
+
+  .first-title{
+    margin-top: 15%;
+    font-size: 300%;
+    line-height: 80px;
+}
+
+#socialIcons{
+  position: fixed;
+  top: 70%;
+  left: 90%;
+  >a{
+    font-size: 100%;
+  }
+}
+
+.lang-skill{
+  flex-direction: row;
+  >.english, .french{
+  height: auto;
+  width: 35%;
+  border-radius: 30px;
+  > .english-details, .french-details{
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .english-title, .french-title{
+    font-size: 100%;
+    padding-bottom: 10px;
+  }
+
+}
+}
+ 
+
+.skillBar-container{
+  >.box{
+    margin-bottom: 0;
+  }
+}
+
+header{
+  display: block;
+  >.box-lang{
+    margin-left: 7%;
+    margin-top: 7%;
+    font-size: 80%;
+  }
+}
+
+.wave {
+  text-align: left;
+}
+
+#myself-pic{
+  width: 80px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.l-drawer {
+  &__icon{
+    border-radius: 25px;
+    width: 20px;
+    height: 20px;
+    top: 2%;
+    right: 2%;
+    &-parts,
+    &-parts:before,
+    &-parts:after{
+      width: 15px;
+      height: 1px;
+    }
+    &-parts:before{
+      top: 8px
+    }
+    &-parts:after{
+      top: -8px
+    }
+  }
+}
+}
+    
+.l-drawer .l-drawer__menu{
+      width: 150px;
+      >ul{
+        margin-top: 15%;
+        margin-left: 15%;
+        font-size: 80%;
+      }
+    }
+
+    .work-link>a{
+      &:link{
+      font-size: 70%;
+      margin: 5% 5%;
+      padding: 7px;
+      }
+    }
+
+    @media screen and (max-width: 450px){
+      .skillBar-container>.box{
+        display: none;
+      }
+
+      .skillBar-container>.sub-title::after{
+        content: "HTML5, CSS3, Sass, Javascript, jQuery, PHP, WordPress";
+        font-weight: bold;
+        color: beige;
+        font-family: cursive;
+        line-height: 20px;
+      }
+
+      .lang-skill{
+        flex-direction: column;
+        >.english, .french{
+        width: 70%;
+        border-radius: 30px;
+        > .english-details, .french-details{
+          font-size: 10px;
+          line-height: 14px;
+        }
+        .english-title, .french-title{
+          font-size: 100%;
+          padding-bottom: 10px;
+        }
+      
+      }
+      }
+    }
+
+  

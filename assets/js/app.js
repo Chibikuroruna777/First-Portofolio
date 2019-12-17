@@ -30,21 +30,23 @@ $(function(){
         }
     });
 
-    // $(window).on('load',function(){
-    //     let typeStart = $('#block-01').offset().top;
-    //     let position = typeStart - $(window).height();  // 発火させたい位置
-    //     // ここから文字を<span></span>で囲む記述
-    //     $('.typ').children().andSelf().contents().each(function() {
-    //     if ($(window).scrollTop() > position && this.nodeType == 3) {
-    //     $(this).replaceWith($(this).text().replace(/(\S)/g, '<span>$1</span>'));
-    //     }
-    //     });
-    //     // ここから一文字ずつフェードインさせる記述
-    //     $('.typ').css({'opacity':1});
-    //     for (let i = 0; i <= $('.typ').children().size(); i++) {
-    //     $('.typ').children('span:eq('+i+')').delay(50*i).animate({'opacity':1},50);
-    //     };
-    //     });
+    // $(window).on('scroll',function(){
+
+        // let position = $('#block-01').offset().top;
+        // // let position = typeStart - $(window).height();  // 発火させたい位置
+        // // ここから文字を<span></span>で囲む記述
+        // $('.typ').children().andSelf().contents().each(function() {
+        //     if ($(window).scrollTop() > position) {
+        //         $(this).replaceWith($(this).text().replace(/(\S)/g, '<span>$1</span>'));
+        //     }
+        // });
+
+        // // ここから一文字ずつフェードインさせる記述
+        // $('.typ').css({'opacity':1});
+        //     for (let i = 0; i <= $('.typ').children().size(); i++) {
+        //         $('.typ').children('span:eq('+i+')').delay(50*i).animate({'opacity':1},50);
+        //     };
+        // });
 
         // 波の設定
         $('.container').ripples({
