@@ -694,11 +694,11 @@ footer{
 
 @media screen and (max-width: 650px){
   body{
-    background-size: auto 100vh;
+    background-size: 100vh auto;
   }
   #block-01{
     padding-top: 5%;
-    background-size: auto 100vh;
+    background-size: 100vh auto;
     >#self-intr{
       font-size: 20px;
       margin: 0;
@@ -745,7 +745,7 @@ footer{
 }
 
 #block-03{
-  background-size: auto 100vh;
+  background-size: 100vh auto;
   >.works{
     >.sub-title h1{
       margin-top: 5%;
