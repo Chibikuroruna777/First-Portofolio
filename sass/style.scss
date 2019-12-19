@@ -45,9 +45,6 @@ body{
 .container{
   margin: 0 auto;
   width: 100%;
-  // position: absolute;
-  // top: 0;
-  // left:0;
 }
 
 header{
@@ -687,13 +684,8 @@ footer{
 }
 
 @media screen and (max-width: 650px){
-  body{
-    background-size: auto 100vh;
-  }
-
   #block-01{
     padding-top: 5%;
-    background-size: auto 100vh;
     >#self-intr{
       font-size: 20px;
       margin: 0;
@@ -740,7 +732,6 @@ footer{
 }
 
 #block-03{
-  background-size: auto 100vh;
   >.works{
     >.sub-title h1{
       margin-top: 5%;
