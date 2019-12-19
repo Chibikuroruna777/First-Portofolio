@@ -2,7 +2,6 @@ body{
   font-family: cursive;
   background: url("../img/Autun.jpg") no-repeat center fixed;
   background-size: cover;
-  height: 100vh;
 }
 
 // body::before{
@@ -205,7 +204,7 @@ header{
   // }
 
   #block-03{
-  background: url("../img/Paris.jpg") no-repeat center scroll;
+  background: url("../img/Paris.jpg") no-repeat center fixed;
   background-size: cover;
   >.works{
     height: 100vh;
@@ -246,11 +245,6 @@ header{
     }
   }
   @-moz-keyframes load{
-    from {
-      width: 0%
-    }
-  }
-  @-o-keyframes load{
     from {
       width: 0%
     }
@@ -673,9 +667,9 @@ footer{
 }
 
 #block-03{
-  position: relative;
-  bottom: 0;
-  right: 0;
+  // position: relative;
+  // bottom: 0;
+  // right: 0;
 >.works{
   >.sub-title h1{
     font-size: 200%;
@@ -694,11 +688,11 @@ footer{
 
 @media screen and (max-width: 650px){
   body{
-    background-size: 100vh auto;
+    background-size: auto 100vh;
   }
   #block-01{
     padding-top: 5%;
-    background-size: 100vh auto;
+    background-size: auto 100vh;
     >#self-intr{
       font-size: 20px;
       margin: 0;
@@ -745,7 +739,7 @@ footer{
 }
 
 #block-03{
-  background-size: 100vh auto;
+  background-size: auto 100vh;
   >.works{
     >.sub-title h1{
       margin-top: 5%;
