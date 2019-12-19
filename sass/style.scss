@@ -206,6 +206,7 @@ header{
   #block-03{
   background: url("../img/Paris.jpg") no-repeat center fixed;
   background-size: cover;
+  width: 100%;
   >.works{
     height: 100vh;
     display: flex;
@@ -629,6 +630,10 @@ footer{
     font-size: 400%;
     line-height: 100px;
 }
+footer{
+  bottom: 5%;
+  font-size: 90%;
+}
 
 #block-01{
   >.sub-title{
@@ -667,9 +672,9 @@ footer{
 }
 
 #block-03{
-  // position: relative;
-  // bottom: 0;
-  // right: 0;
+  position: relative;
+  bottom: 0;
+  right: 0;
 >.works{
   >.sub-title h1{
     font-size: 200%;
@@ -679,17 +684,13 @@ footer{
 }
 }
 }
-
-footer{
-  bottom: 5%;
-  font-size: 90%;
-}
 }
 
 @media screen and (max-width: 650px){
   body{
     background-size: auto 100vh;
   }
+
   #block-01{
     padding-top: 5%;
     background-size: auto 100vh;
@@ -780,7 +781,6 @@ footer{
     font-size: 100%;
     padding-bottom: 10px;
   }
-
 }
 }
  
@@ -859,11 +859,10 @@ header{
           font-size: 100%;
           padding-bottom: 10px;
         }
-      
       }
       }
       footer{
-        bottom: 3%;
+        bottom: 0%;
       }
     }
 
