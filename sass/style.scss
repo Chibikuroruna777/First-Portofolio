@@ -1,8 +1,21 @@
 body{
   font-family: cursive;
-  background: url("../img/Autun.jpg") center no-repeat fixed;
+  background: url("../img/Autun.jpg") no-repeat center fixed;
   background-size: cover;
+  height: 100vh;
 }
+
+// body::before{
+//   display:block;
+//   top:0;
+//   left:0;
+//   background: url("../img/Autun.jpg") no-repeat center fixed;
+//   background-size: cover;
+//   z-index:-1;
+//   width:100%;
+//   height:100vh;
+//   content:"";
+// }
 
 .wave {
   border-radius: 5px;
@@ -33,6 +46,9 @@ body{
 .container{
   margin: 0 auto;
   width: 100%;
+  position: absolute;
+  top: 0;
+  left:0;
 }
 
 header{
@@ -82,10 +98,20 @@ header{
   margin-right: 20%;
 }
 
-
+// #block-01::before{
+//   display:block;
+//   top:0;
+//   left:0;
+//   background: url("../img/Bear.jpg") no-repeat center fixed;
+//   z-index:-1;
+//   background-size: cover;
+//   width:100%;
+//   height:100vh;
+//   content:"";
+// }
 
 #block-01{
-  background: url("../img/Bear.jpg") center no-repeat fixed;
+  background: url("../img/Bear.jpg") no-repeat center fixed;
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -166,18 +192,30 @@ header{
     }
   }
 
+  // #block-03::before{
+  // display:block;
+  // top:0;
+  // left:0;
+  // background: url("../img/Paris.jpg") no-repeat center fixed;
+  // background-size: cover;
+  // width:100%;
+  // height:100vh;
+  // z-index:-1;
+  // content:"";
+  // }
+
   #block-03{
-    background: url("../img/Paris.jpg") center no-repeat fixed;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
+  background: url("../img/Paris.jpg") no-repeat center scroll;
+  background-size: cover;
   >.works{
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    margin-left: 15%;
+    margin-left: 10%;
     >.sub-title h1{
       color: black;
       text-shadow: 2px 2px grey;
+      margin-left: 5%;
       @include subtitle;
       margin-bottom: 30px;
       margin-top: 100px;
@@ -506,6 +544,7 @@ header{
   position: fixed;
   top: 50%;
   left: 2%;
+  z-index: 100;
   cursor: pointer;
 >a{
   font-size: 200%;
@@ -572,6 +611,22 @@ header{
   } 
 }
 
+footer{
+  display: flex;
+  width: 100%;
+  height: 3%;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  color: beige;
+  text-shadow: 1px 1px grey;
+  font-size: 120%;
+  font-style: italic;
+  position: absolute;
+  bottom: 0;
+  right: 4%;
+}
+
 @import "reset.css";
 
 @media screen and (max-width: 800px){
@@ -618,20 +673,32 @@ header{
 }
 
 #block-03{
+  position: relative;
+  bottom: 0;
+  right: 0;
 >.works{
   >.sub-title h1{
     font-size: 200%;
   }
   >.work-details{
-    margin: 10% 15% 0 0;
-}
+    margin: 2% 15% 0 0;
 }
 }
 }
 
+footer{
+  bottom: 5%;
+  font-size: 90%;
+}
+}
+
 @media screen and (max-width: 650px){
+  body{
+    background-size: auto 100vh;
+  }
   #block-01{
     padding-top: 5%;
+    background-size: auto 100vh;
     >#self-intr{
       font-size: 20px;
       margin: 0;
@@ -678,6 +745,7 @@ header{
 }
 
 #block-03{
+  background-size: auto 100vh;
   >.works{
     >.sub-title h1{
       margin-top: 5%;
@@ -800,6 +868,10 @@ header{
       
       }
       }
+      footer{
+        bottom: 3%;
+      }
     }
+
 
   
