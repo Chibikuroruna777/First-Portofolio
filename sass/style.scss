@@ -243,26 +243,26 @@ header{
   }
   
   .bar.HTML5::before{
-    width: calc(90% - 10px);
+    width: calc(80% - 10px);
   }
   .bar.CSS3::before{
     width: calc(80% - 10px);
   }
   .bar.Sass::before{
-    width: calc(50% - 10px);
+    width: calc(40% - 10px);
   }
   .bar.Javascript::before{
-    width: calc(50% - 10px);
+    width: calc(30% - 10px);
   }
   .bar.jQuery::before{
-    width: calc(60% - 10px);
+    width: calc(40% - 10px);
   }
   .bar.PHP::before{
-    width: calc(50% - 10px);
+    width: calc(20% - 10px);
   }
 
   .bar.WordPress::before{
-    width: calc(50% - 10px);
+    width: calc(20% - 10px);
   }
 
   /*ドロワー*/
