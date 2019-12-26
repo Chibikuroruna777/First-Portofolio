@@ -106,10 +106,9 @@ header{
   color: beige;
   display: flex;
   flex-direction: column;
-  >.age, .hobby, .background{
+  >.age, .hobby, .background, .strength{
     font-family: sans-serif;
     display: flex;
-    margin-bottom: 5%;
   >p{
     margin-bottom: 20px;
     line-height: 40px;
@@ -118,7 +117,7 @@ header{
 }
 }
 
-.age>p:first-child, .hobby>p:first-child, .background>p:first-child{
+.age>p:first-child, .hobby>p:first-child, .background>p:first-child, .strength>p:first-child{
   width: 20%;
 }
 
@@ -541,7 +540,7 @@ header{
   display: flex;
   flex-direction: column;
   width: 25%;
-  margin: 0 20px;
+  margin: 0 5px;
 >.work-link{
   display: flex;
   justify-content: center;
@@ -594,8 +593,7 @@ footer{
     line-height: 100px;
 }
 footer{
-  bottom: 5%;
-  font-size: 90%;
+  display: none;
 }
 
 #block-01{
@@ -818,6 +816,13 @@ header{
         }
       }
       }
+
+      .work-content{
+      >.work-inner{
+        margin-bottom: 2%;
+      }
+    }
+
       footer{
         bottom: 0%;
       }
