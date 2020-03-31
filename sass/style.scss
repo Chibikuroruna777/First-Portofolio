@@ -255,9 +255,12 @@ header{
   }
   .bar.jQuery::before{
     width: calc(40% - 10px);
-  }
+  } 
   .bar.PHP::before{
-    width: calc(20% - 10px);
+    width: calc(70% - 10px);
+  }
+  .bar.laravel::before{
+    width: calc(30% - 10px);
   }
 
   .bar.WordPress::before{
@@ -559,7 +562,7 @@ header{
   background-color: black;
   }
   &:visited{
-  color: beige;
+  color: blue;
   border: 1px solid grey;
   }
   &:hover{
