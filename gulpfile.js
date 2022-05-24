@@ -1,11 +1,11 @@
 'use strict';
-let gulp = require('gulp');
-let sass = require('gulp-sass')(require('sass'));
-let cleanCSS = require('gulp-clean-css'); // minify
-let sourcemaps = require('gulp-sourcemaps'); // dev toolからscssの何行目か確認
-let sassGlob = require('gulp-sass-glob'); // パーシャルの一括読み込み
-let rename = require('gulp-rename'); // rename
-let autoprefixer = require('gulp-autoprefixer'); // ベンダープレフィックス
+const gulp = require('gulp');
+const sass = require('gulp-sass')(require('sass'));
+const cleanCSS = require('gulp-clean-css'); // minify
+const sourcemaps = require('gulp-sourcemaps'); // dev toolからscssの何行目か確認
+const sassGlob = require('gulp-sass-glob'); // パーシャルの一括読み込み
+const rename = require('gulp-rename'); // rename
+const autoprefixer = require('gulp-autoprefixer'); // ベンダープレフィックス
 gulp.task('sass', function () {
   return gulp.src('./sass/**/*.scss')
     .pipe(sourcemaps.init())
