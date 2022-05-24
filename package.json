@@ -17,5 +17,9 @@
     "gulp-sass": "^5.1.0",
     "gulp-sass-glob": "^1.1.0",
     "gulp-sourcemaps": "^2.6.5"
+  },
+  "dependencies": {
+    "sass": "^1.52.1",
+    "sass-loader": "^13.0.0"
   }
 }
