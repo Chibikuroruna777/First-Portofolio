@@ -1,6 +1,6 @@
 'use strict';
-const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
+const gulp = require('gulp');
 const cleanCSS = require('gulp-clean-css'); // minify
 const sourcemaps = require('gulp-sourcemaps'); // dev toolからscssの何行目か確認
 const sassGlob = require('gulp-sass-glob'); // パーシャルの一括読み込み
@@ -10,7 +10,7 @@ gulp.task('sass', function () {
   return gulp.src('./sass/**/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sassGlob())
-    .pipe(sass({ outputStyle: 'compact' }))
+    .pipe(sass({ outputStyle: 'compressed' }))
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(sourcemaps.write('./'))
