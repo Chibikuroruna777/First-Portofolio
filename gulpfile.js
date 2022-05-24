@@ -1,6 +1,6 @@
 'use strict';
 const gulp = require('gulp');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const cleanCSS = require('gulp-clean-css'); // minify
 const sourcemaps = require('gulp-sourcemaps'); // dev toolからscssの何行目か確認
 const sassGlob = require('gulp-sass-glob'); // パーシャルの一括読み込み
