@@ -659,6 +659,10 @@ footer {
   right: 4%;
 }
 
+.l-drawer__icon-parts:before {
+  top: 9px;
+}
+
 @import "reset.css";
 
 @media screen and (max-width: 800px) {
@@ -781,7 +785,7 @@ footer {
   }
 
   .l-drawer__icon-parts:before {
-    top: 9px;
+    top: 7px;
   }
 
   #block-02 {
