@@ -263,7 +263,6 @@
     "next-tick": "^1.1.0",
     "node-gyp": "^9.3.1",
     "node-releases": "^2.0.12",
-    "node-sass": "^9.0.0",
     "nopt": "^7.1.0",
     "normalize-package-data": "^5.0.0",
     "normalize-path": "^3.0.0",
@@ -419,7 +418,7 @@
     "yargs-parser": "^21.1.1"
   },
   "scripts": {
-    "sass:watch": "node-sass sass/style.scss assets/css/style.css -w"
+    "sass:watch": "sass sass/style.scss assets/css/style.css -w"
   },
   "repository": {
     "type": "git",
