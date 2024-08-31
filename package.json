@@ -405,7 +405,7 @@
     "vinyl-fs": "^4.0.0",
     "vinyl-sourcemaps-apply": "^0.2.1",
     "watchpack": "^2.4.0",
-    "webpack": "^5.84.1",
+    "webpack": "^5.94.0",
     "webpack-sources": "^3.2.3",
     "which": "^3.0.1",
     "wide-align": "^1.1.5",
